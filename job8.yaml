@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: job8-tf-rnn
+spec:
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  containers:
+    - name: rnn
+      image: zsl3203/rnn

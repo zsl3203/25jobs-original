@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: Needtoplaced
+spec:
+  restartPolicy: Never
+  schedulerName: scheduler-need-to-be-replaced
+  containers:
+    - name: rnn
+      image: zsl3203/rnn

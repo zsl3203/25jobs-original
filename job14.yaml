@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: job14-torch-lenet
+spec:
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  containers:
+    - name: lenet-test-epoch
+      image: fuyuqi1995/june-lenet
+      command: ["python"]
+      args: ["lenet.py","5","/root/torch/lenet-1.logs","torch-lenet-1"]
+

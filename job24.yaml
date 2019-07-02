@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: job24-tf-drnn
+spec:
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  containers:
+    - name: d-rnn
+      image: zsl3203/d-rnn

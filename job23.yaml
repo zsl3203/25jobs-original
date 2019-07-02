@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: job23-torch-vae
+spec:
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  containers:
+    - name: lenet-test-epoch
+      image: fuyuqi1995/june-vae
+      command: ["python"]
+      args: ["app.py","15","/root/torch/vae-2.logs","torch-vae-2"]
+
